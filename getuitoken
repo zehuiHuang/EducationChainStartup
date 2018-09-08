@@ -1,0 +1,2 @@
+#!/bin/bash
+parity --config="./config.toml" signer new-token

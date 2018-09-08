@@ -1,0 +1,53 @@
+[parity]
+chain = "./config.json"
+base_path = "./data"
+# no_persistent_txqueue = true
+
+[network]
+port = 10000
+min_peers = 1
+max_peers = 100
+id = 2000
+
+[rpc]
+port = 10001
+apis = ["all"]
+interface = "all"
+cors = ["*"]
+hosts = ["all"]
+server_threads = 10
+
+[websockets]
+disable = false
+port = 10002
+interface = "all"
+origins = ["all"]
+apis = ["all"]
+hosts = ["all"]
+
+[ui]
+port = 10003
+force = false
+disable = false
+interface = "all"
+#path = "./data/signer"
+
+[ipc]
+disable = false
+
+[account]
+password = ["./password"]
+
+[mining]
+#engine_signer = "0x212e754b95f99799aab5686ab21cf45a5f7e4000"
+reseal_on_txs = "all"
+gas_floor_target = "240000000"
+gas_cap = "300000000"
+reseal_min_period = 0
+reseal_max_period = 1000
+force_sealing = true
+min_gas_price = 0
+usd_per_tx = "0.0"
+
+
+
